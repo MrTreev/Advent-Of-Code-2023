@@ -1,28 +1,28 @@
 fn match_numwrd(numwrd: &str) -> Option<usize>{
-    let wrdidx = numwrd.len();
-    if numwrd.find("one")? < wrdidx{ Some(1) }
-    else if numwrd.find("two")? < wrdidx{ Some(2) }
-    else if numwrd.find("three")? < wrdidx{ Some(3) }
-    else if numwrd.find("four")? < wrdidx{ Some(4) }
-    else if numwrd.find("five")? < wrdidx{ Some(5) }
-    else if numwrd.find("six")? < wrdidx{ Some(6) }
-    else if numwrd.find("seven")? < wrdidx{ Some(7) }
-    else if numwrd.find("eight")? < wrdidx{ Some(8) }
-    else if numwrd.find("nine")? < wrdidx{ Some(9) }
+    let wrdidx = 0;
+    if numwrd.contains("one") && numwrd.find("one")? < wrdidx{ Some(1)}
+    else if numwrd.contains("two") {if numwrd.find("two")? > wrdidx{ Some(2) }}
+    else if numwrd.contains("three") {if numwrd.find("three")? > wrdidx{ Some(3) }}
+    else if numwrd.contains("four") {if numwrd.find("four")? > wrdidx{ Some(4) }}
+    else if numwrd.contains("five") {if numwrd.find("five")? > wrdidx{ Some(5) }}
+    else if numwrd.contains("six") {if numwrd.find("six")? > wrdidx{ Some(6) }}
+    else if numwrd.contains("seven") {if numwrd.find("seven")? > wrdidx{ Some(7) }}
+    else if numwrd.contains("eight") {if numwrd.find("eight")? > wrdidx{ Some(8) }}
+    else if numwrd.contains("nine") {if numwrd.find("nine")? > wrdidx{ Some(9) }}
     else {None}
 }
 
 fn rmatch_numwrd(numwrd: &str) -> Option<usize>{
     let wrdidx = 0;
-    if numwrd.find("one")? < wrdidx{ Some(1) }
-    else if numwrd.rfind("two")? > wrdidx{ Some(2) }
-    else if numwrd.rfind("three")? > wrdidx{ Some(3) }
-    else if numwrd.rfind("four")? > wrdidx{ Some(4) }
-    else if numwrd.rfind("five")? > wrdidx{ Some(5) }
-    else if numwrd.rfind("six")? > wrdidx{ Some(6) }
-    else if numwrd.rfind("seven")? > wrdidx{ Some(7) }
-    else if numwrd.rfind("eight")? > wrdidx{ Some(8) }
-    else if numwrd.rfind("nine")? > wrdidx{ Some(9) }
+    if numwrd.contains("one") && numwrd.rfind("one")? < wrdidx{ Some(1)}
+    else if numwrd.contains("two") {if numwrd.rfind("two")? > wrdidx{ Some(2) }}
+    else if numwrd.contains("three") {if numwrd.rfind("three")? > wrdidx{ Some(3) }}
+    else if numwrd.contains("four") {if numwrd.rfind("four")? > wrdidx{ Some(4) }}
+    else if numwrd.contains("five") {if numwrd.rfind("five")? > wrdidx{ Some(5) }}
+    else if numwrd.contains("six") {if numwrd.rfind("six")? > wrdidx{ Some(6) }}
+    else if numwrd.contains("seven") {if numwrd.rfind("seven")? > wrdidx{ Some(7) }}
+    else if numwrd.contains("eight") {if numwrd.rfind("eight")? > wrdidx{ Some(8) }}
+    else if numwrd.contains("nine") {if numwrd.rfind("nine")? > wrdidx{ Some(9) }}
     else {None}
 }
 
