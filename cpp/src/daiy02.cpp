@@ -1,7 +1,7 @@
 #include <iostream>
 #include <list>
 
-#include "../day00/utility.h"
+#include "aoc-utility.h"
 
 const int r_cubes = 12;
 const int g_cubes = 13;
@@ -42,7 +42,7 @@ std::pair<int, char> pair_item(std::string item) {
             std::string ret_val = std::string(inchar, initer);
             inchar = initer + 1;
             char ret_char = *(initer + 1);
-            auto ret_pair = std::pair(str_to_int(ret_val), ret_char);
+            auto ret_pair = std::pair(aoc_str_to_int(ret_val), ret_char);
             return ret_pair;
         }
     }
