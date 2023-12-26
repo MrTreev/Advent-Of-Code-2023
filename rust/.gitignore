@@ -1,0 +1,6 @@
+# Rust
+*.pdb
+*.rs.bk
+Cargo.lock
+debug/
+target/

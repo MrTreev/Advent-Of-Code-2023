@@ -18,10 +18,3 @@
 *.slo
 *.smod
 *.so
-
-# Rust
-*.pdb
-*.rs.bk
-Cargo.lock
-debug/
-target/
