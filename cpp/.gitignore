@@ -1,4 +1,6 @@
 # C/C++
+tst/
+bin/
 *.a
 *.app
 *.d

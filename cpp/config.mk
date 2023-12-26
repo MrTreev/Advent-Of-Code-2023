@@ -2,7 +2,7 @@ SRC_PATH     = src
 BLD_PATH     = bld
 BIN_PATH     = bin
 
-DAT_PATH     = ../test_data
+DAT_PATH     = ../test
 TST_PATH     = tst
 
 SRC_FILES    = $(wildcard ${SRC_PATH}/day*.cpp)
