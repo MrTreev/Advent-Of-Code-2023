@@ -8,17 +8,19 @@ TST_PATH     = tst
 SRC_FILES    = $(wildcard ${SRC_PATH}/day*.cpp)
 BIN_FILES    = $(patsubst ${SRC_PATH}/%.cpp,${BIN_PATH}/%,${SRC_FILES})
 TST_FILES    = $(patsubst ${SRC_PATH}/%.cpp,${TST_PATH}/%,${SRC_FILES})
+ARCH         = native
 
 CPP = clang++
 
 # Base Flags
-CPP_FLAGS    = -ggdb -Og -std=c++23 -march=native -mtune=native
+CPP_FLAGS   += -Og
+CPP_FLAGS   += -ggdb
+CPP_FLAGS   += -std=c++11
 # Options
-CPP_FLAGS   += -fstrict-flex-arrays=3
-#CPP_FLAGS   += -nostdlib -nostdinc
-CPP_FLAGS   += -fdelete-null-pointer-checks -fstack-protector
-CPP_FLAGS   += -fsized-deallocation -fstrict-enums
+CPP_FLAGS   += -pedantic
 # Warnings
-CPP_FLAGS   += -Werror -Wall -Wextra -Wpedantic -Wabi
-# Includes
-INCLUDES    += -I
+CPP_FLAGS   += -Wabi
+CPP_FLAGS   += -Wall
+#CPP_FLAGS   += -Werror
+CPP_FLAGS   += -Wextra
+CPP_FLAGS   += -Wpedantic
