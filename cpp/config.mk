@@ -4,11 +4,13 @@ BIN_PATH     = bin
 
 DAT_PATH     = ../test
 TST_PATH     = tst
+DEP_PATH     = ${SRC_PATH}/utility/impl
 
-SRC_FILES    = $(wildcard ${SRC_PATH}/day*.cpp)
+SRC_FILES    = $(wildcard ${SRC_PATH}/*.cpp)
 BIN_FILES    = $(patsubst ${SRC_PATH}/%.cpp,${BIN_PATH}/%,${SRC_FILES})
 TST_FILES    = $(patsubst ${SRC_PATH}/%.cpp,${TST_PATH}/%,${SRC_FILES})
 ARCH         = native
+V            = 
 
 CPP = clang++
 

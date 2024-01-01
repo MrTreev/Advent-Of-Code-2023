@@ -13,7 +13,7 @@ all: ${BIN_FILES}
 test: ${TST_FILES}
 
 ${BIN_PATH}/%: ${SRC_PATH}/%.cpp
-	${CPP} ${CPP_FLAGS} $< -o $@
+	${CPP} ${V} ${CPP_FLAGS} $< -o $@
 
 ${TST_PATH}/%: ${BIN_PATH}/%
 	$< <$(patsubst ${BIN_PATH}/%,${DAT_PATH}/%.txt,$<) >$@
@@ -22,3 +22,6 @@ debug:
 	@echo "SRC_FILES: ${SRC_FILES}"
 	@echo "BIN_FILES: ${BIN_FILES}"
 	@echo "TST_FILES: ${TST_FILES}"
+
+clean:
+	rm -f ${BIN_FILES} ${TST_FILES}
