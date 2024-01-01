@@ -31,12 +31,9 @@ void process_number(std::string::iterator li, std::string line) {
 }
 
 void process_line(day::linebuffer linebuf) {
-    assert(sizeof(linebuf[0]) == sizeof(linebuf[1]) == sizeof(linebuf[2]));
-    for (                                                                                                //
-        std::string::iterator pi = linebuf[0].begin(), li = linebuf[1].begin(), ni = linebuf[2].begin(); //
-        pi != linebuf[0].end() && li != linebuf[1].end() && ni != linebuf[2].end();                      //
-        pi++, li++, ni++                                                                                 //
-    ) {
+    assert(sizeof(linebuf[0]) == sizeof(linebuf[1]) && sizeof(linebuf[1]) == sizeof(linebuf[2]));
+    for (std::string::iterator pi = linebuf[0].begin(), li = linebuf[1].begin(), ni = linebuf[2].begin();
+         pi != linebuf[0].end() && li != linebuf[1].end() && ni != linebuf[2].end(); pi++, li++, ni++) {
         if (std::any_of(pi - 1, pi + 1, is_symbol) || //
             std::any_of(li - 1, li + 1, is_symbol) || //
             std::any_of(ni - 1, ni + 1, is_symbol)) { //
