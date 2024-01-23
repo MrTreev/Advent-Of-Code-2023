@@ -1,16 +1,11 @@
-#ifndef AOC_CHECKS_HPP_
-#define AOC_CHECKS_HPP_
+#pragma once
 
 namespace aoc {
 namespace checks {
 
-bool is_numeric(const char character);
+constexpr bool is_numeric(const char character) {
+    return '0' <= character && character <= '9';
+}
 
 } // namespace checks
 } // namespace aoc
-
-#ifdef AOC_CHECKS_IMPL
-#include "impl/checks.cpp"
-#endif
-
-#endif

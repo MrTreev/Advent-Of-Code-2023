@@ -1,9 +1,6 @@
-#include <string>
-#define AOC_LOGGING_IMPL
-#define AOC_CONVERT_IMPL
-#define AOC_CHECKS_IMPL
 #include "utility/cases.hpp"
 #include "utility/logging.hpp"
+#include <string>
 
 static aoc::logging::logger  logger(aoc::logging::log_level::DEBUG);
 static const std::size_t     r_cubes_max = 12;

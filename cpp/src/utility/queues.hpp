@@ -1,5 +1,4 @@
-#ifndef AOC_QUEUES_HPP_
-#define AOC_QUEUES_HPP_
+#pragma once
 #include <queue>
 
 namespace aoc {
@@ -20,5 +19,3 @@ template <typename T, std::size_t MaxLen> class FixedQueue {
 
 } // namespace queue
 } // namespace aoc
-
-#endif

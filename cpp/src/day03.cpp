@@ -1,6 +1,3 @@
-#define AOC_LOGGING_IMPL
-#define AOC_CONVERT_IMPL
-#define AOC_CHECKS_IMPL
 #include "utility/cases.hpp"
 #include "utility/logging.hpp"
 #include "utility/queues.hpp"

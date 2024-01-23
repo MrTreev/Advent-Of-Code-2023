@@ -1,5 +1,4 @@
-#ifndef AOC_CASES_HPP_
-#define AOC_CASES_HPP_
+#pragma once
 
 namespace aoc {
 namespace cases {} // namespace cases
@@ -30,5 +29,3 @@ namespace cases {} // namespace cases
 #define aoc_numeric\
         '0':case'1':case'2':case'3':case'4':case'5':case'6':case'7':case'8':case'9'
 // clang-format on
-
-#endif

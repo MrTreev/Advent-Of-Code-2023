@@ -1,6 +1,3 @@
-#define AOC_LOGGING_IMPL
-#define AOC_CONVERT_IMPL
-#define AOC_CHECKS_IMPL
 #include "utility/checks.hpp"
 #include "utility/convert.hpp"
 #include "utility/logging.hpp"
