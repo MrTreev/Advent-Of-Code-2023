@@ -1,13 +1,15 @@
 #pragma once
-#include "checks.hpp"
 #include <string>
+
+#include "checks.hpp"
 
 namespace aoc {
 namespace convert {
 
 inline std::size_t str_to_int(std::string in_string) {
     int out_int = 0;
-    for (std::string::iterator iter = in_string.begin(); iter != in_string.end(); ++iter) {
+    for (std::string::iterator iter = in_string.begin();
+         iter != in_string.end(); ++iter) {
         if (aoc::checks::is_numeric(*iter)) {
             out_int *= 10;
             out_int += *iter - '0';
@@ -39,5 +41,5 @@ inline std::size_t word_to_int(std::string in_string) {
     }
 }
 
-} // namespace convert
-} // namespace aoc
+}  // namespace convert
+}  // namespace aoc

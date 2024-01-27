@@ -1,8 +1,8 @@
 #pragma once
 
 namespace aoc {
-namespace cases {} // namespace cases
-} // namespace aoc
+namespace cases {}  // namespace cases
+}  // namespace aoc
 
 // clang-format off
 #define aoc_alnum\

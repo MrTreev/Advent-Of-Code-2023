@@ -1,0 +1,17 @@
+[
+    {
+        "directory": "."
+        "command": "clang++  -Og -ggdb -std=c++14 -pedantic -Wabi -Wall -Wextra -Wpedantic src/day01.cpp -o bin/day01"
+        "file": "src/day01.cpp"
+    },
+    {
+        "directory": "."
+        "command": "clang++  -Og -ggdb -std=c++14 -pedantic -Wabi -Wall -Wextra -Wpedantic src/day02.cpp -o bin/day02"
+        "file": "src/day02.cpp"
+    },
+    {
+        "directory": "."
+        "command": "clang++  -Og -ggdb -std=c++14 -pedantic -Wabi -Wall -Wextra -Wpedantic src/day03.cpp -o bin/day03"
+        "file": "src/day03.cpp"
+    }
+]

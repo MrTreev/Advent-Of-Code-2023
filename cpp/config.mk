@@ -17,7 +17,7 @@ CPP = clang++
 # Base Flags
 CPP_FLAGS   += -Og
 CPP_FLAGS   += -ggdb
-CPP_FLAGS   += -std=c++11
+CPP_FLAGS   += -std=c++14
 # Options
 CPP_FLAGS   += -pedantic
 # Warnings
