@@ -1,0 +1,96 @@
+---
+Checks:
+  - 'bugprone-assert-side-effect'
+  - 'bugprone-assignment-in-if-condition'
+  - 'bugprone-bad-signal-to-kill-thread'
+  - 'bugprone-bool-pointer-implicit-conversion'
+  - 'bugprone-branch-clone'
+  - 'bugprone-chained-comparison'
+  - 'bugprone-implicit-widening-of-multiplication-result'
+  - 'bugprone-incorrect-roundings'
+  - 'bugprone-infinite-loop'
+  - 'bugprone-integer-division'
+  - 'bugprone-macro-parentheses'
+  - 'bugprone-macro-repeated-side-effects'
+  - 'bugprone-multi-level-implicit-pointer-conversion'
+  - 'bugprone-multiple-new-in-one-expression'
+  - 'bugprone-multiple-statement-macro'
+  - 'bugprone-narrowing-conversions'
+  - 'bugprone-no-escape'
+  - 'bugprone-not-null-terminated-result'
+  - 'bugprone-posix-return'
+  - 'bugprone-reserved-identifier'
+  - 'bugprone-spuriously-wake-up-functions'
+  - 'bugprone-suspicious-enum-usage'
+  - 'bugprone-suspicious-include'
+  - 'bugprone-suspicious-memory-comparison'
+  - 'bugprone-suspicious-memset-usage'
+  - 'bugprone-suspicious-missing-comma'
+  - 'bugprone-suspicious-realloc-usage'
+  - 'bugprone-suspicious-semicolon'
+  - 'bugprone-suspicious-string-compare'
+  - 'bugprone-swapped-arguments'
+  - 'bugprone-terminating-continue'
+  - 'bugprone-too-small-loop-variable'
+  - 'bugprone-unused-return-value'
+  - 'concurrency-mt-unsafe'
+  - 'misc-confusable-identifiers'
+  - 'misc-header-include-cycle'
+  - 'misc-include-cleaner'
+  - 'misc-misleading-bidirectional'
+  - 'misc-redundant-expression'
+  - 'misc-use-internal-linkage'
+  - 'performance-enum-size'
+  - 'readability-duplicate-include'
+  - 'readability-else-after-return'
+  - 'readability-enum-initial-value'
+  - 'readability-function-cognitive-complexity'
+  - 'readability-function-size'
+  - 'readability-identifier-length'
+  - 'readability-identifier-naming'
+  - 'readability-implicit-bool-conversion'
+  - 'readability-magic-numbers'
+  - 'readability-math-misleading-indentation'
+  - 'readability-math-missing-parentheses'
+  - 'readability-misplaced-array-index'
+  - 'readability-named-parameter'
+  - 'readability-redundant-casting'
+  - 'readability-redundant-control-flow'
+  - 'readability-redundant-declaration'
+  - 'readability-redundant-preprocessor'
+  - 'clang-analyzer-core*'
+  - 'clang-analyzer-deadcode*'
+  - 'clang-analyzer-nullability*'
+  - 'clang-analyzer-optin*'
+  - 'clang-analyzer-security*'
+  - 'clang-analyzer-unix*'
+WarningsAsErrors: ''
+AnalyzeTemporaryDtors: false
+SystemHeaders:   false
+CheckOptions:
+    bugprone-assert-side-effect.AssertMacros: ['assert', 'AOC_ASSERT']
+    readability-function-size.BranchThreshold: 64
+    readability-function-size.LineThreshold: 100
+    readability-function-size.StatementThreshold: 800
+    readability-identifier-length.IgnoredLoopCounterNames: []
+    readability-identifier-length.IgnoredParameterNames: []
+    readability-identifier-length.IgnoredVariableNames: []
+    readability-identifier-length.MinimumLoopCounterNameLength: 3
+    readability-identifier-length.MinimumParameterNameLength: 3
+    readability-identifier-length.MinimumVariableNameLength: 3
+    readability-identifier-naming.EnumCase: CamelCase
+    readability-identifier-naming.EnumConstantCase: UPPER_CASE
+    readability-identifier-naming.FunctionCase: camelBack
+    readability-identifier-naming.ParameterCase: lower_case
+    readability-identifier-naming.StructCase: CamelCase
+    readability-identifier-naming.UnionCase: CamelCase
+    readability-identifier-naming.VariableCase: lower_case
+
+# lower_case
+# UPPER_CASE
+# camelBack
+# CamelCase
+# camel_Snake_Back
+# Camel_Snake_Case
+# aNy_CasE
+# Leading_upper_snake_case

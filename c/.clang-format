@@ -1,0 +1,12 @@
+---
+Language: Cpp
+LineEnding: LF
+BasedOnStyle: LLVM
+AlignEscapedNewlines: DontAlign
+AllowShortIfStatementsOnASingleLine: false
+BreakBeforeBraces: Linux
+ColumnLimit: 0
+IndentCaseLabels: false
+IndentPPDirectives: AfterHash
+IndentWidth: 8
+UseTab: Always

@@ -1,0 +1,21 @@
+CompileFlags:
+  Compiler: clang
+  Add:
+    - '-xc'
+    - '-std=c89'
+Index:
+  Background: Build
+  StandardLibrary: No
+Diagnostics:
+  ClangTidy:
+    FastCheckFilter: None
+  UnusedIncludes: Strict
+InlayHints:
+  BlockEnd: Yes
+  Designators: Yes
+  Enabled: Yes
+  ParameterNames: Yes
+  DeducedTypes: Yes
+  TypeNameLimit: 24
+Hover:
+  ShowAKA: True
