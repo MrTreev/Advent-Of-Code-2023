@@ -3,16 +3,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void _aoc_impl_todo(const char *message, const char *file, const char *line)
+void _aoc_impl_todo(const char *message, const char *file, const int line)
 {
-	fprintf(stderr, "%s:%d: TODO: %s\n", __FILE__, __LINE__, message);
+	fprintf(stderr, "%s:%d: TODO: %s\n", file, line, message);
 	abort();
 }
 
-void _aoc_impl_unreachable(const char *message, const char *file, const char *line)
+void _aoc_impl_unreachable(const char *message, const char *file, const int line)
 {
-	fprintf(stderr, "%s:%d: UNREACHABLE: %s\n", __FILE__, __LINE__, message);
+	fprintf(stderr, "%s:%d: UNREACHABLE: %s\n", file, line, message);
 	abort();
+}
+
+const char *implaoc_temp_sprintf(const char *format, ...)
+{
+	AOC_TODO("AAA");
+	return NULL;
 }
 
 void implaoc_rebuild_self(int argc, char **argv, const char *source_path, ...)

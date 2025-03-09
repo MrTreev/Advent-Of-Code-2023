@@ -1,12 +1,11 @@
 #ifndef INCLUDE_C_AOC_H_
 #define INCLUDE_C_AOC_H_
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 #if __STDC__ != 1
 #	error "Not a standard compliant compiler"
-#endif
-
-#ifdef __cplusplus
-extern "C" {
 #endif
 
 #include <stddef.h>
@@ -101,7 +100,6 @@ extern "C" {
 #define AOC_END() return 0
 
 /* FUNCTION MACROS */
-
 #define aoc_shift(xs, xs_sz) (AOC_ASSERT((xs_sz) > 0), (xs_sz)--, *(xs)++)
 
 /* Structures */
@@ -118,12 +116,12 @@ struct Nob_File_Paths {
 };
 
 /* Implementation Functions */
-void implaoc_todo(const char *message, const char *file, const char *line);
-void implaoc_unreachable(const char *message, const char *file, const char *line);
+void implaoc_todo(const char *message, const char *file, const int line);
+void implaoc_unreachable(const char *message, const char *file, const int line);
 void implaoc_rebuild_self(int argc, char **argv, const char *source_path, ...);
+const char *implaoc_temp_sprintf(const char *format, ...);
 
 #ifdef __cplusplus
 }
 #endif
-
 #endif // INCLUDE_C_AOC_H_
